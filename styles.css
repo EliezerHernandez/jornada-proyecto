@@ -1,51 +1,117 @@
 :root {
-    /* Colors */
-    --blanco: #fff;
-    --negro: #000;
-    --neutral-c: #f5f5f5;
-    --gris-oscuro: #8c8c8c;
-    --grafito: #222;
-    --rojo: #b81515;
+  /* Colors */
+  --blanco: #fff;
+  --negro: #000;
+  --neutral-c: #f5f5f5;
+  --gris-oscuro: #8c8c8c;
+  --grafito: #222;
+  --rojo: #b81515;
 }
 
 * {
-    font-family: Montserrat;
-    box-sizing: border-box;
+  font-family: Montserrat;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .encabezado {
-    background: black;
-    width: 100%;
-    padding: 40px 0;
+  background: black;
+  width: 100%;
+  padding: 40px 0;
 }
 .navegacion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 60px;
 }
 .navegacion__logo__icono {
-    max-width: 260px;
+  max-width: 260px;
 }
 .menu {
-    display: flex;
-    color: white;
-    gap: 40px;
-    list-style-type: none;
+  display: flex;
+  color: white;
+  gap: 40px;
+  list-style-type: none;
 }
 .menu a {
+  color: var(--blanco);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.contenedor__principal__portada {
+  max-width: 100%;
+}
+.contenedor__principal__texto {
+  max-width: 1200px;
+  color: var(--grafito, #222);
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 110px auto;
+}
+.contenedor__ofertas,
+.contenedor__categorias,
+.contenedor__destinos,
+.contenedor__pago,
+.contenedor__testimonios {
+  color: var(--grafito);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 64px;
+}
+hr {
+  width: 180px;
+  height: 4px;
+  background: var(--rojo);
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 112px;
+}
+img {
+    max-width: 100%;
+}
+.contenedor__ofertas__lugares{
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.ofertas__tokyo {
+    background-image: url("./img/tokyo.png");
+}
+
+.ofertas__sanandres {
+    background-image: url("./img/san-andreas.png");
+}
+.ofertas__tokyo, .ofertas__sanandres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 32px;
     color: var(--blanco);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    flex: 1 0 calc(50% - 48px);
+    box-sizing: border-box;
+    text-align: center;
 }
